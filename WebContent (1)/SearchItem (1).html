@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  function preventBack(){window.history.forward();}
+  setTimeout("preventBack()", 0);
+  window.onunload=function(){null};
+</script>
+<meta charset="ISO-8859-1">
+<title>Search drug</title>
+<style>
+  body{
+    color: black;
+	background-color: LightCyan    ;
+	background-image: url('img/ph3.jpg')  ;
+	
+}
+form {text-align:center;
+border: 3px solid #f1f1f1;
+
+} 
+
+.container {
+    padding: 16px;
+}
+.btn{
+ background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<a href="CustomerPage.html">Go Back</a>
+<br><br>
+<form method="post" action="Order.jsp" >
+<div class="container">
+<label><b>Drug Name:</b></label>
+<input type="text" name="drug_name" required> <br><br><br>
+<label><b>Quantity : </b></label>
+<input type="text" name="quantity" required> <br><br><br>
+<input type="submit" value="search" class="btn">
+</div>
+</form>
+</body>
+</html>

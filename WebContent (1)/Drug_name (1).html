@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+  function preventBack(){window.history.forward();}
+  setTimeout("preventBack()", 0);
+  window.onunload=function(){null};
+</script>
+</head>
+<style>
+form {text-align:center;
+border: 3px solid #f1f1f1;
+
+} 
+.btn{
+ background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.container {
+    padding: 16px;
+}
+</style>
+<body>
+<br><br>
+<form method="post" action="StockView_1Record.jsp">
+<div class="container">
+<label><b>Enter name of the drug :</b></label>
+<input type="text" name="drug_name">
+<br><br>
+<input type="submit" value="VIEW" class="btn" >
+     </div>   
+        </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+<style>
+  body{
+    color: black;
+	background-color: LightCyan    ;
+	background-image: url('img/ph3.jpg')  ;
+	
+}
+form {text-align:center;
+border: 3px solid #f1f1f1;
+
+} 
+
+.container {
+    padding: 16px;
+}
+.btn{
+ background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+</style>

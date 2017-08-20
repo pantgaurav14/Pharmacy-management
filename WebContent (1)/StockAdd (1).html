@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  function preventBack(){window.history.forward();}
+  setTimeout("preventBack()", 0);
+  window.onunload=function(){null};
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ADD STOCK</title>
+<style>
+  body{
+    color: black;
+	background-color: LightCyan    ;
+	background-image: url('img/ph3.jpg')  ;
+	
+}
+form {text-align:center;
+border: 3px solid #f1f1f1;
+
+} 
+.btn{
+ background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 16px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 8px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+</style>
+
+
+
+</head>
+<body bgcolor="#E6E6FA">
+<a href="Stocks.html">Go Back</a>
+<br><br>
+<h1 align="center"><b>ADD A DRUG</b></h1>
+<form method="post" action="StockAddConn.jsp" >
+<div class="container">
+<label><b>Drug Name:</b></label>
+<input type="text" name="drug_name"> <br> <br>
+<label><b>Drug ID: </b></label>
+<input type="text" name="drug_id"> <br> <br>
+<label><b>Drug Cost: </b></label>
+<input type="text" name="cost"> <br> <br>
+<label><b>Drug Quantity: </b></label>
+<input type="text" name="quantity"> <br> <br>
+<input type="submit" value="add" class="btn">
+</div>
+</form>
+</body>
+</html>
